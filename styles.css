@@ -1,0 +1,116 @@
+:root {
+   --negro: #9338c7;
+   --azul: #125dc7;
+   --celeste1: #a1c6ea;
+   --naranja: rgb(253, 165, 0);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: sans-serif;
+    background-color: #fff;
+   
+}
+
+header {
+    width: 100%;
+    height: 700px;
+    background: url(img/best_gaming_monitor_-_lead.jpg);
+    object-fit: cover;
+}
+
+h1 {
+    font-size: 40px;
+    margin-bottom: 20px;
+}
+
+button {
+    display: inline-block;
+    font-size: 22px;
+    color: rgb(245, 245, 245);
+    padding: 10px;
+    padding-top: 11px;
+    background: none;
+    border: none;
+}
+
+button:hover {
+    color: rgb(66, 31, 99);
+}
+
+button:focus {
+    outline-style: none;
+}
+
+.modal{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6);
+    
+    display: none;
+    overflow: auto;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+
+
+
+.modal-box {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;  
+}
+
+.modal-container {
+    position: relative;
+    background: #fefefe;
+    margin: auto;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.4);
+    width: 30%;
+    animation-name: modal;
+    animation-duration: 1s;
+    min-height: 350px;
+    min-width: 300px;
+    border: none;
+    border-radius: 7px;
+}
+
+@keyframes modal {
+    from{top: -33px; opacity: 0;}
+    to{top:0; opacity: 1;}
+}
+
+.modal-header {
+    min-height: 50px;
+    background: var(--negro);
+    display: flex;
+    justify-content: space-between;
+    border-radius: 3px;
+}
+
+.modal-header h2 {
+    max-width: 40px;
+    color: rgb(250, 250, 250);
+    padding-left: 3%;
+    padding-top: 10px;
+}
+
+.modal-body {
+    padding:15px;
+}
+
+
+
+
+
+
+
+
