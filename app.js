@@ -7,8 +7,8 @@ setTimeout(showModal, 2000);
     modal.style.display = "block"
 } 
 // 
-if (document.cookie.indexOf("popupShown=true") == -1) {
-    document.cookie = "popupShown=true; max-age=86400";
+document.getElementById("myModal") {
+    sessionStorage.setItem()
 }
      
    
